@@ -15,7 +15,7 @@ pipeline {
     
     stage('Deloy') {
       steps {
-         bat 'mvn deploy'
+         deploy adapters: [tomcat9(path: '', url: 'http://localhost:8081')], contextPath: 'rps', war: '**/*.war'
       }
     }
     
