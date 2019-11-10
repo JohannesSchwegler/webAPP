@@ -16,6 +16,13 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.8.1</version>
+</dependency>
+
 	</dependencies>
 	
 	<properties>
@@ -24,11 +31,7 @@
 	<build>
 	    <plugins>
 		    
-		        <plugin>
-    <inherited>true</inherited>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-compiler-plugin</artifactId>              
-</plugin>
+
 		<plugin>
 		    <groupId>com.spotify</groupId>
 		    <artifactId>dockerfile-maven-plugin</artifactId>
