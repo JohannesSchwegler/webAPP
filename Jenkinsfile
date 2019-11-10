@@ -9,7 +9,7 @@ pipeline {
     
     stage('Install') {
       steps {
-         bat 'mvn install'
+         bat 'mvn clean install'
       }
     }
     
